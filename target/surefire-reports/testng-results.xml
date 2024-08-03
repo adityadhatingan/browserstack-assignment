@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-03T07:35:54Z" name="browserstack-assignment" finished-at="2024-08-03T07:36:01Z" duration-ms="7697">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.ParallelRun@2ddc8ecb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-08-03T07:35:54Z" name="WIN8TEST" finished-at="2024-08-03T07:36:01Z" duration-ms="7697">
+      <class name="testrunner.ParallelRun">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:testrunner.ParallelRun@2ddc8ecb]" started-at="2024-08-03T07:35:54Z" name="setUpClass" finished-at="2024-08-03T07:35:54Z" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.ParallelRun@2ddc8ecb]" started-at="2024-08-03T07:35:54Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-03T07:36:01Z" duration-ms="7108" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["LowPriceWithMSPAbove8.5"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[SmartPriceTesting]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=127.0.6533.89)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0fd6512c25f49ceaa149d88f30fc978e, clickElement {id=f.D0ABCFE90CAB082878DE84CF11CA4BBE.d.FDBF6195CD0262CB0532373C76FFE459.e.640}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\adity\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50637}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50637/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0fd6512c25f49ceaa149d88f30fc978e)] -> xpath: //a[@data-label='Mobiles::Compare Mobiles']]
+Session ID: 0fd6512c25f49ceaa149d88f30fc978e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=127.0.6533.89)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0fd6512c25f49ceaa149d88f30fc978e, clickElement {id=f.D0ABCFE90CAB082878DE84CF11CA4BBE.d.FDBF6195CD0262CB0532373C76FFE459.e.640}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\adity\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50637}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50637/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0fd6512c25f49ceaa149d88f30fc978e)] -> xpath: //a[@data-label='Mobiles::Compare Mobiles']]
+Session ID: 0fd6512c25f49ceaa149d88f30fc978e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at components.SmartPriceWebPage.clickCompareMobileOption(SmartPriceWebPage.java:37)
+at stepdefinition.MobileComparisonStepDefinition.userClicksOnCompareMobileInsideMobilesTab(MobileComparisonStepDefinition.java:31)
+at ✽.user clicks on compare mobile inside mobiles tab(file:///C:/Users/adity/Desktop/WorkFiles/Workspace/Projects/browserstack-assignment/src/test/resources/features/BrowserStackTest.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner.ParallelRun@2ddc8ecb]" started-at="2024-08-03T07:36:01Z" name="tearDownClass" finished-at="2024-08-03T07:36:01Z" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testrunner.ParallelRun -->
+    </test> <!-- WIN8TEST -->
+  </suite> <!-- browserstack-assignment -->
+</testng-results>

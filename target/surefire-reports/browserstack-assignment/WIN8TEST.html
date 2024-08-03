@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>TestNG:  WIN8TEST</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>WIN8TEST</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 03 13:05:54 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7697 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testrunner.ParallelRun.runScenario()'><b>runScenario</b><br>Test class: testrunner.ParallelRun<br>Test method: Runs Cucumber Scenarios<br>Parameters: "LowPriceWithMSPAbove8.5", "Optional[SmartPriceTesting]"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=127.0.6533.89)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0fd6512c25f49ceaa149d88f30fc978e, clickElement {id=f.D0ABCFE90CAB082878DE84CF11CA4BBE.d.FDBF6195CD0262CB0532373C76FFE459.e.640}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\adity\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50637}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50637/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0fd6512c25f49ceaa149d88f30fc978e)] -&gt; xpath: //a[@data-label=&apos;Mobiles::Compare Mobiles&apos;]]
+Session ID: 0fd6512c25f49ceaa149d88f30fc978e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at components.SmartPriceWebPage.clickCompareMobileOption(SmartPriceWebPage.java:37)
+	at stepdefinition.MobileComparisonStepDefinition.userClicksOnCompareMobileInsideMobilesTab(MobileComparisonStepDefinition.java:31)
+	at ?.user clicks on compare mobile inside mobiles tab(file:///C:/Users/adity/Desktop/WorkFiles/Workspace/Projects/browserstack-assignment/src/test/resources/features/BrowserStackTest.feature:6)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace663459519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace663459519'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from target frame detached
+  (Session info: chrome=127.0.6533.89)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0fd6512c25f49ceaa149d88f30fc978e, clickElement {id=f.D0ABCFE90CAB082878DE84CF11CA4BBE.d.FDBF6195CD0262CB0532373C76FFE459.e.640}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.89, chrome: {chromedriverVersion: 127.0.6533.88 (a2d0cb026721..., userDataDir: C:\Users\adity\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50637}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50637/devtoo..., se:cdpVersion: 127.0.6533.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0fd6512c25f49ceaa149d88f30fc978e)] -&gt; xpath: //a[@data-label=&apos;Mobiles::Compare Mobiles&apos;]]
+Session ID: 0fd6512c25f49ceaa149d88f30fc978e
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at components.SmartPriceWebPage.clickCompareMobileOption(SmartPriceWebPage.java:37)
+	at stepdefinition.MobileComparisonStepDefinition.userClicksOnCompareMobileInsideMobilesTab(MobileComparisonStepDefinition.java:31)
+	at ?.user clicks on compare mobile inside mobiles tab(file:///C:/Users/adity/Desktop/WorkFiles/Workspace/Projects/browserstack-assignment/src/test/resources/features/BrowserStackTest.feature:6)
+</pre></div></td>
+<td>7</td>
+<td>testrunner.ParallelRun@2ddc8ecb</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" data-provider-thread-count="1" name="Failed suite [browserstack-assignment]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="methods" name="WIN8TEST(failed)" verbose="0">
+    <classes>
+      <class name="testrunner.ParallelRun">
+        <methods>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- testrunner.ParallelRun -->
+    </classes>
+  </test> <!-- WIN8TEST(failed) -->
+</suite> <!-- Failed suite [browserstack-assignment] -->

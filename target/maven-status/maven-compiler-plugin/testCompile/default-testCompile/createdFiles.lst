@@ -1,0 +1,5 @@
+stepdefinition\MobileComparisonStepDefinition.class
+testrunner\ParallelRun.class
+stepdefinition\hook\ApplicationHooks.class
+components\constants\SmartPriceWebPageConstants.class
+components\SmartPriceWebPage.class
